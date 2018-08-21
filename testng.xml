@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite">
+    <parameter name="Browser" value="Chrome" />
+    <parameter name="Server" value="https://www.baidu.com" />
+    <test name="Java_Learn">
+        <classes>
+            <class name="测试一.TestHelloWorld"/>
+            <!-- 添加不同测试类文件 -->
+        </classes>
+    </test> <!-- Java_Learn -->
+
+    <!-- 只需要运行API Test，也就是说不能运行Function Test -->
+    <test name="Testng_learn">
+        <groups>
+            <run>
+                <!--
+                利用正则匹配。有时候我们group的名称设置很长，我们记不住，这个时候就建议采用正则匹配，例如以API开头的group执行。
+                <include name="API.*"/>
+                <include name="Function.*"/>
+
+                除什么之外，我们可以用excloude标签来实现。
+                <exclude name="API Test"/>
+                <exclude name="Function Test"/>
+
+                前面我们已经创建了两个组，一个API Test，一个叫Function Test。
+                现在我们用一个All 的组来管理这两个组。
+                只要我run标签里，写执行All,那么就相当于执行了API Test和Function Test。
+                这个场景，在实际工作中是肯定要使用的。
+                例如webui自动化中，执行全部的用例，其实就是一个模块设置一个组，这些模块组都归All组管
+                这里要注意，有些用例如果是不属于任何一个组，这里运行All,这些没有划分到某一个组的用例是不会执行的。
+                所以，在实际工作中，建议每个用例都写上属于什么组，直接把模块当做组理解肯定就行，这样不会遗漏。
+                <include name="all"/>
+
+                -->
+                <include name="API.*"/>
+                <include name="Function.*"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="测试一.TestGroupsDemo"/>
+        </classes>
+    </test>
+
+    <test name="testgn_2">
+        <classes>
+            <class name="dependsOnMethods.TestDependenceDemo2"/>
+        </classes>
+    </test>
+
+    <test name="testgn_3">
+        <!--从这个结果来看，确实实现了执行app group之前先执行tomcat group的用例，由于设置了group 依赖，所以先执行tomcat group的用例，然后执行app group用例。-->
+        <groups>
+            <dependencies>
+                <group name="app" depends-on="tomcat"/>
+            </dependencies>
+        </groups>
+
+        <classes>
+            <class name="dependsOnMethods.TestDependenceDemo3"/>
+        </classes>
+    </test>
+</suite> <!-- Default Suite -->
