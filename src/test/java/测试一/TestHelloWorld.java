@@ -19,8 +19,9 @@ public class TestHelloWorld {
     }
 
     @Test
-    public void test() {
-        System.out.println("asdf");
+    @Parameters({"people"})
+    public void test(String people) {
+        System.out.println(people);
     }
 
     @AfterClass

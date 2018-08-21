@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="22" passed="22">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default Suite" duration-ms="8103" started-at="2018-08-21T10:54:11Z" finished-at="2018-08-21T10:54:19Z">
+    <groups>
+      <group name="app">
+        <method signature="TestDependenceDemo3.shutDownApp()[pri:0, instance:dependsOnMethods.TestDependenceDemo3@12f40c25]" name="shutDownApp" class="dependsOnMethods.TestDependenceDemo3"/>
+        <method signature="TestDependenceDemo3.startAppServer()[pri:0, instance:dependsOnMethods.TestDependenceDemo3@12f40c25]" name="startAppServer" class="dependsOnMethods.TestDependenceDemo3"/>
+      </group> <!-- app -->
+      <group name="Fucntion Test">
+        <method signature="TestGroupsDemo.test01()[pri:0, instance:测试一.TestGroupsDemo@2db0f6b2]" name="test01" class="测试一.TestGroupsDemo"/>
+      </group> <!-- Fucntion Test -->
+      <group name="API Test">
+        <method signature="TestGroupsDemo.test01()[pri:0, instance:测试一.TestGroupsDemo@2db0f6b2]" name="test01" class="测试一.TestGroupsDemo"/>
+        <method signature="TestGroupsDemo.test02()[pri:0, instance:测试一.TestGroupsDemo@2db0f6b2]" name="test02" class="测试一.TestGroupsDemo"/>
+      </group> <!-- API Test -->
+      <group name="tomcat">
+        <method signature="TestDependenceDemo2.restartTomcatService()[pri:0, instance:dependsOnMethods.TestDependenceDemo2@424c0bc4]" name="restartTomcatService" class="dependsOnMethods.TestDependenceDemo2"/>
+        <method signature="TestDependenceDemo2.tomcatServiceIsDown()[pri:0, instance:dependsOnMethods.TestDependenceDemo2@424c0bc4]" name="tomcatServiceIsDown" class="dependsOnMethods.TestDependenceDemo2"/>
+        <method signature="TestDependenceDemo3.restartTomcatService()[pri:0, instance:dependsOnMethods.TestDependenceDemo3@12f40c25]" name="restartTomcatService" class="dependsOnMethods.TestDependenceDemo3"/>
+        <method signature="TestDependenceDemo3.tomcatServiceIsDown()[pri:0, instance:dependsOnMethods.TestDependenceDemo3@12f40c25]" name="tomcatServiceIsDown" class="dependsOnMethods.TestDependenceDemo3"/>
+      </group> <!-- tomcat -->
+      <group name="Function Test">
+        <method signature="TestGroupsDemo.test03()[pri:0, instance:测试一.TestGroupsDemo@2db0f6b2]" name="test03" class="测试一.TestGroupsDemo"/>
+      </group> <!-- Function Test -->
+    </groups>
+    <test name="Java_Learn" duration-ms="8047" started-at="2018-08-21T10:54:11Z" finished-at="2018-08-21T10:54:19Z">
+      <class name="测试一.TestHelloWorld">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:测试一.TestHelloWorld@1c6b6478]" name="setUp" is-config="true" duration-ms="9" started-at="2018-08-21T18:54:11Z" finished-at="2018-08-21T18:54:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:测试一.TestHelloWorld@1c6b6478]" name="loginTest" duration-ms="3006" started-at="2018-08-21T18:54:11Z" finished-at="2018-08-21T18:54:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="testSoftAssert()[pri:0, instance:测试一.TestHelloWorld@1c6b6478]" name="testSoftAssert" duration-ms="5" started-at="2018-08-21T18:54:14Z" finished-at="2018-08-21T18:54:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSoftAssert -->
+        <test-method status="PASS" signature="AssertTest1()[pri:0, instance:测试一.TestHelloWorld@1c6b6478]" name="AssertTest1" duration-ms="0" started-at="2018-08-21T18:54:14Z" finished-at="2018-08-21T18:54:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssertTest1 -->
+        <test-method status="PASS" signature="AssertTest2()[pri:0, instance:测试一.TestHelloWorld@1c6b6478]" name="AssertTest2" duration-ms="1" started-at="2018-08-21T18:54:14Z" finished-at="2018-08-21T18:54:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssertTest2 -->
+        <test-method status="PASS" signature="test(java.lang.String)[pri:0, instance:测试一.TestHelloWorld@1c6b6478]" name="test" duration-ms="1" started-at="2018-08-21T18:54:14Z" finished-at="2018-08-21T18:54:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[詹姆斯]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:测试一.TestHelloWorld@1c6b6478]" name="test1" duration-ms="0" started-at="2018-08-21T18:54:14Z" finished-at="2018-08-21T18:54:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:测试一.TestHelloWorld@1c6b6478]" name="test1" duration-ms="0" started-at="2018-08-21T18:54:14Z" finished-at="2018-08-21T18:54:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.baidu.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test6()[pri:0, instance:测试一.TestHelloWorld@1c6b6478]" name="test6" duration-ms="5002" started-at="2018-08-21T18:54:14Z" finished-at="2018-08-21T18:54:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test6 -->
+        <test-method status="PASS" signature="test5()[pri:1, instance:测试一.TestHelloWorld@1c6b6478]" name="test5" duration-ms="0" started-at="2018-08-21T18:54:19Z" finished-at="2018-08-21T18:54:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5 -->
+        <test-method status="PASS" signature="test3()[pri:2, instance:测试一.TestHelloWorld@1c6b6478]" name="test3" duration-ms="0" started-at="2018-08-21T18:54:19Z" finished-at="2018-08-21T18:54:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="test4()[pri:4, instance:测试一.TestHelloWorld@1c6b6478]" name="test4" duration-ms="1" started-at="2018-08-21T18:54:19Z" finished-at="2018-08-21T18:54:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method status="PASS" signature="test7()[pri:0, instance:测试一.TestHelloWorld@1c6b6478]" name="test7" duration-ms="0" started-at="2018-08-21T18:54:19Z" depends-on-methods="测试一.TestHelloWorld.test4" finished-at="2018-08-21T18:54:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test7 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:测试一.TestHelloWorld@1c6b6478]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-08-21T18:54:19Z" finished-at="2018-08-21T18:54:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- 测试一.TestHelloWorld -->
+    </test> <!-- Java_Learn -->
+    <test name="Testng_learn" duration-ms="1" started-at="2018-08-21T10:54:19Z" finished-at="2018-08-21T10:54:19Z">
+      <class name="测试一.TestGroupsDemo">
+        <test-method status="PASS" signature="test03()[pri:0, instance:测试一.TestGroupsDemo@2db0f6b2]" name="test03" duration-ms="0" started-at="2018-08-21T18:54:19Z" finished-at="2018-08-21T18:54:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test03 -->
+        <test-method status="PASS" signature="test02()[pri:0, instance:测试一.TestGroupsDemo@2db0f6b2]" name="test02" duration-ms="0" started-at="2018-08-21T18:54:19Z" finished-at="2018-08-21T18:54:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test02 -->
+        <test-method status="PASS" signature="test01()[pri:0, instance:测试一.TestGroupsDemo@2db0f6b2]" name="test01" duration-ms="0" started-at="2018-08-21T18:54:19Z" finished-at="2018-08-21T18:54:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test01 -->
+      </class> <!-- 测试一.TestGroupsDemo -->
+    </test> <!-- Testng_learn -->
+    <test name="testgn_2" duration-ms="1" started-at="2018-08-21T10:54:19Z" finished-at="2018-08-21T10:54:19Z">
+      <class name="dependsOnMethods.TestDependenceDemo2">
+        <test-method status="PASS" signature="tomcatServiceIsDown()[pri:0, instance:dependsOnMethods.TestDependenceDemo2@424c0bc4]" name="tomcatServiceIsDown" duration-ms="0" started-at="2018-08-21T18:54:19Z" finished-at="2018-08-21T18:54:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tomcatServiceIsDown -->
+        <test-method status="PASS" signature="startAppServer()[pri:0, instance:dependsOnMethods.TestDependenceDemo2@424c0bc4]" name="startAppServer" duration-ms="0" depends-on-groups="tomcat" started-at="2018-08-21T18:54:19Z" finished-at="2018-08-21T18:54:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startAppServer -->
+        <test-method status="PASS" signature="restartTomcatService()[pri:0, instance:dependsOnMethods.TestDependenceDemo2@424c0bc4]" name="restartTomcatService" duration-ms="0" started-at="2018-08-21T18:54:19Z" finished-at="2018-08-21T18:54:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- restartTomcatService -->
+      </class> <!-- dependsOnMethods.TestDependenceDemo2 -->
+    </test> <!-- testgn_2 -->
+    <test name="testgn_3" duration-ms="2" started-at="2018-08-21T10:54:19Z" finished-at="2018-08-21T10:54:19Z">
+      <class name="dependsOnMethods.TestDependenceDemo3">
+        <test-method status="PASS" signature="shutDownApp()[pri:0, instance:dependsOnMethods.TestDependenceDemo3@12f40c25]" name="shutDownApp" duration-ms="0" depends-on-groups="tomcat" started-at="2018-08-21T18:54:19Z" finished-at="2018-08-21T18:54:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDownApp -->
+        <test-method status="PASS" signature="restartTomcatService()[pri:0, instance:dependsOnMethods.TestDependenceDemo3@12f40c25]" name="restartTomcatService" duration-ms="0" started-at="2018-08-21T18:54:19Z" finished-at="2018-08-21T18:54:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- restartTomcatService -->
+        <test-method status="PASS" signature="tomcatServiceIsDown()[pri:0, instance:dependsOnMethods.TestDependenceDemo3@12f40c25]" name="tomcatServiceIsDown" duration-ms="0" started-at="2018-08-21T18:54:19Z" finished-at="2018-08-21T18:54:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tomcatServiceIsDown -->
+        <test-method status="PASS" signature="startAppServer()[pri:0, instance:dependsOnMethods.TestDependenceDemo3@12f40c25]" name="startAppServer" duration-ms="0" depends-on-groups="tomcat" started-at="2018-08-21T18:54:19Z" finished-at="2018-08-21T18:54:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startAppServer -->
+      </class> <!-- dependsOnMethods.TestDependenceDemo3 -->
+    </test> <!-- testgn_3 -->
+  </suite> <!-- Default Suite -->
+</testng-results>

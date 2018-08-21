@@ -5,7 +5,11 @@
     <parameter name="Server" value="https://www.baidu.com" />
     <test name="Java_Learn">
         <classes>
-            <class name="测试一.TestHelloWorld"/>
+            <class name="测试一.TestHelloWorld">
+                <methods>
+                    <parameter name="people" value="詹姆斯"/>
+                </methods>
+            </class>
             <!-- 添加不同测试类文件 -->
         </classes>
     </test> <!-- Java_Learn -->

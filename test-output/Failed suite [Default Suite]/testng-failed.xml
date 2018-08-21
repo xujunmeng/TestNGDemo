@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Default Suite]]">
+  <parameter name="Server" value="https://www.baidu.com"/>
+  <parameter name="Browser" value="Chrome"/>
+  <test name="Java_Learn">
+    <classes>
+      <class name="测试一.TestHelloWorld">
+        <parameter name="people" value="詹姆斯"/>
+      </class> <!-- 测试一.TestHelloWorld -->
+    </classes>
+  </test> <!-- Java_Learn -->
+  <test name="Testng_learn">
+    <groups>
+      <run>
+        <include name="API.*"/>
+        <include name="Function.*"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="测试一.TestGroupsDemo"/>
+    </classes>
+  </test> <!-- Testng_learn -->
+  <test name="testgn_2">
+    <classes>
+      <class name="dependsOnMethods.TestDependenceDemo2"/>
+    </classes>
+  </test> <!-- testgn_2 -->
+  <test name="testgn_3">
+    <groups>
+      <dependencies>
+        <group depends-on="tomcat" name="app"/>
+      </dependencies>
+    </groups>
+    <classes>
+      <class name="dependsOnMethods.TestDependenceDemo3"/>
+    </classes>
+  </test> <!-- testgn_3 -->
+</suite> <!-- Failed suite [Failed suite [Default Suite]] -->
