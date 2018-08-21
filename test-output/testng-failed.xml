@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Default Suite]]">
   <parameter name="Server" value="https://www.baidu.com"/>
   <parameter name="Browser" value="Chrome"/>
   <test name="Java_Learn">
@@ -36,4 +36,4 @@
       <class name="dependsOnMethods.TestDependenceDemo3"/>
     </classes>
   </test> <!-- testgn_3 -->
-</suite> <!-- Failed suite [Default Suite] -->
+</suite> <!-- Failed suite [Failed suite [Default Suite]] -->

@@ -71,10 +71,9 @@ public class TestHelloWorld {
     }
 
     //设置了执行次数数5次，5次执行总共耗时不能超过5100毫秒，否则抛出中断异常
-    @Test(invocationCount = 5, invocationTimeOut = 5100)
+    @Test(invocationCount = 100, invocationTimeOut = 5100, threadPoolSize = 50)
     public void test6() throws InterruptedException{
-        Thread.sleep(1000);
-        System.out.println("login test");
+        System.out.println(Thread.currentThread().getName() + " : login test");
     }
 
     @Test(dependsOnMethods={"test4"})
